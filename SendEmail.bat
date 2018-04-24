@@ -14,7 +14,7 @@
 ::   ##  * JB 04/03/2018 -- Initial creation 
 ::   ################################################################################
 
-::Set EMAILSTATUS=Success
+Set EMAILSTATUS=Success
 goto %EMAILSTATUS%
 
 :Start
@@ -29,6 +29,9 @@ goto FINISH
 xcopy /y C:\JDA\scripts\RestartJDAEmailError.txt C:\inetpub\mailroot\Pickup\RestartJDAEmailError.txt*
 goto FINISH
 
+:Test
+xcopy /y C:\JDA\scripts\RestartJDAEmailError.txt C:\inetpub\mailroot\Pickup\RestartJDAEmailError.txt*
+goto FINISH
 
 :FINISH
 EXIT /B 
