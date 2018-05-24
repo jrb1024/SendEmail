@@ -32,6 +32,6 @@ goto FINISH
 :Test
 xcopy /y C:\JDA\scripts\RestartJDAEmailError.txt C:\inetpub\mailroot\Pickup\RestartJDAEmailError.txt*
 goto FINISH
-
+::EDITIING THE FILE
 :FINISH
 EXIT /B 
